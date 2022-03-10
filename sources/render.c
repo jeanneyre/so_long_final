@@ -6,7 +6,7 @@
 /*   By: crondeau <crondeau@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/01 12:43:39 by crondeau          #+#    #+#             */
-/*   Updated: 2022/03/01 15:38:11 by crondeau         ###   ########.fr       */
+/*   Updated: 2022/03/02 09:46:36 by crondeau         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	parsing_display(t_data *data, int i, int j)
 void	print_moves(t_data *data)
 {
 	write(1, "\E[H\E[2J", ft_strlen("\E[H\E[2J"));
-	write(1, GREEN, ft_strlen(GREEN));
+	write(1, YELLOW, ft_strlen(YELLOW));
 	write(1, "         Moves counter : ",
 		ft_strlen("         Moves counter : "));
 	ft_putnbr(data->player.moove);
